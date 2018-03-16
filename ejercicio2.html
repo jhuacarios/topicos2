@@ -3,8 +3,33 @@
 <head>
     <meta charset="utf-8" />
     <title>Ejercicio 2</title>
+    <style>
+        .solucion{
+            width: 600px;
+        }
+    </style>
 </head>
 <body>
-    <img src="">
+    <h4>Respuesta original</h4>
+    <img src="ejercicio2.jpg">
+    <h4>Solución:</h4>
+    <p class="solucion">
+        Los pasos que ocurren al momento de hacerle click a un enlace son:    
+    </p>
+    <ol>
+        <li>El navegador verifica el caché para buscar la IP del enlace</li>
+        <li>Si no lo encuentra en el cache, solicita informacion al dns</li>
+        <li>Se inicia una conección TCP con el servidor</li>
+        <li>El cliente envía un paquete SYN al servidor preguntando si está abierto a nuevas conexiones</li>
+        <li>Si el servidor está disponible responde con un SYN/ACK paquete</li>
+        <li>El cliente reconoce el SYN/ACK y envía un ACK</li>
+        <li>La conexión TCP es establecida</li>
+        <li>El navegador envía una petición HTTP get</li>
+        <li>El servidor reconoce la petición</li>
+        <li>El servidor envía la respuesta</li>
+        <li>El cliente recibe la respuesta desde el servidor</li>
+    </ol>
+    <p><a href="index.html">Volver</a></p>
+
 </body>
 </html>
