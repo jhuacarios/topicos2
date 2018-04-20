@@ -82,6 +82,7 @@ body{
     border-width: 1px;
     border-color: rgb(199, 199, 199);
     border-style: solid;
+    position: relative;
 }
 
 header{
@@ -107,7 +108,43 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-left: 20px;
 }
 
+#class-menu li:hover{
+    display:inline;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
 #class-menu ul{
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+#titulo-chat{
+    text-align: center;
+}
+
+.mensaje-bot{
+    background-color: rgb(0, 255, 157);
+    width: 70%;
+    height:auto;
+    margin-left: auto;
+    margin-right: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#text-box{
+    width: 90%;
+    min-height: 100px;
+    margin-left:12px;
+    position: absolute;
+    bottom: 10px;
+}
+
+article{
+    height: 90vh;
+    overflow: auto;
 }
